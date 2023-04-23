@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BudgetBuddy - Transaction</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+	<header>
+        <nav>
+          <ul class="navigation">
+            <li><a href="\index.html">Home</a></li>
+            <li><a class="active" href="#">Transaction</a></li>
+            <li><a href="\Budget Page\index.html">Budgeting</a></li>
+            <li><a href="\Analytics Page\index.html">Analytics</a></li>
+			<li><a href="\Bill Remainder Page\index.html">Bill Reminder</a></li>
+          </ul>
+        </nav>
+      </header>      
+
+	<div class="container">
+		<h1>Transaction</h1>
+
+		<form id="transaction-form">
+			<label for="transaction-name">Transaction Name:</label>
+			<input type="text" id="transaction-name" name="transaction-name" required>
+
+			<label for="transaction-amount">Amount (INR):</label>
+			<input type="number" id="transaction-amount" name="transaction-amount" required>
+
+			<label for="transaction-category">Category:</label>
+			<select id="transaction-category" name="transaction-category">
+                <option>Choose an option</option>
+				<option value="Food">Food</option>
+				<option value="Utility">Utility</option>
+				<option value="Transport">Transport</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="Others">Others</option>
+			</select>
+            <br>
+			<button type="submit">Add Transaction</button>
+            <br>
+		</form>
+
+		<h2>Transaction History</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Sr. No.</th>
+						<th>Transaction Name</th>
+						<th>Amount (INR)</th>
+						<th>Category</th>
+                        <th>Date</th>
+				</tr>
+			</thead>
+			<tbody id="transaction-table-body">
+			</tbody>
+			<!-- <tfoot>
+				<tr>
+					<td colspan="2">Total:</td>
+					<td id="transaction-table-total">0</td>
+					<td></td>
+				</tr>
+			</tfoot> -->
+		</table>
+	</div>
+
+	<footer>
+		<p>&copy; 2023 BudgetBuddy. All Rights Reserved.</p>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>

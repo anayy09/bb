@@ -1,0 +1,252 @@
+body {
+  font-family: 'Poppins'; font-size: 20px;
+}
+header {
+  background-color: #3C8D2F;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Budgeting Page Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3C8D2F;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #F0F7F4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form input[type="number"],
+form select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button[type="submit"] {
+  background-color: #3C8D2F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #3C8D2F;
+  color: white;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #fff;
+  color: #3C8D2F;
+}
+
+
+/* Charts */
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.chart {
+  width: 80%;
+  height: 400px;
+}
+
+.chart-labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.chart-label {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.chart-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Tables */
+
+.table-container {
+  margin-top: 2rem;
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table td:first-child {
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .chart {
+    width: 50%;
+  }
+}
+
+.chart-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  height: 400px;
+  width: 600px;
+  margin: 20px;
+  position: relative;
+}
+
+.chart canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+footer {
+  background-color: #3C8D2F;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+}

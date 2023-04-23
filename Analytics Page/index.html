@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BudgetBuddy - Analytics</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="navigation">
+			  <li><a href="\index.html">Home</a></li>
+			  <li><a href="\Transactions Page\index.html">Transaction</a></li>
+			  <li><a href="\Budget Page\index.html">Budgeting</a></li>
+			  <li><a class="active" href="#">Analytics</a></li>
+              <li><a href="\Bill Remainder Page\index.html">Bill Reminder</a></li>
+			</ul>
+		  </nav>
+	</header>
+
+	<main>
+		<h1>Analytics</h1>
+
+		<div id="chart-container-month"></div>
+		<div id="chart-container-week"></div>
+		<div id="chart-container-day"></div>
+	</main>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawMonthChart);
+		google.charts.setOnLoadCallback(drawWeekChart);
+		google.charts.setOnLoadCallback(drawDayChart);
+
+		function drawMonthChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Month', 'Expenses'],
+				['January',  1000],
+				['February',  1500],
+				['March',  800],
+				['April',  1200],
+				['May',  2000],
+				 // Add more data here
+			]);
+
+			var options = {
+				title: 'Monthly Expenses',
+				pieHole: 0.6,
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('chart-container-month'));
+			chart.draw(data, options);
+		}
+
+		function drawWeekChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Week', 'Expenses'],
+				['Week 1',  200],
+				['Week 2',  400],
+				['Week 3',  600],
+				['Week 4',  800],
+				 // Add more data here
+			]);
+
+			var options = {
+				title: 'Weekly Expenses',
+				pieHole: 0.6,
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('chart-container-week'));
+			chart.draw(data, options);
+		}
+
+		function drawDayChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Day', 'Expenses'],
+				['Monday',  100],
+				['Tuesday',  200],
+				['Wednesday',  150],
+				['Thursday',  180],
+				['Friday',  220],
+				['Saturday',  300],
+				['Sunday',  250],
+				 // Add more data here
+			]);
+
+			var options = {
+				title: 'Daily Expenses',
+				pieHole: 0.6,
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('chart-container-day'));
+			chart.draw(data, options);
+		}
+	</script>
+
+    <footer>
+		<p>&copy; 2023 BudgetBuddy. All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

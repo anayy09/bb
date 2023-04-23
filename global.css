@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+body {
+  font-family: 'Poppins'; font-size: 20px;
+}
+
+:root {
+  /* fonts */
+  --font-rufina: Rufina;
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-31xl: 50px;
+  --font-size-6xl: 25px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lightgoldenrodyellow: #ddffdc;
+  --color-seagreen: #438249;
+  --color-honeydew: #e7fae7;
+
+  /* border radiuses */
+  --br-6xl: 25px;
+}

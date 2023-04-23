@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BudgetBuddy - Budgeting</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="navigation">
+			  <li><a href="\index.html">Home</a></li>
+			  <li><a href="\Transactions Page\index.html">Transaction</a></li>
+			  <li><a class="active" href="#">Budgeting</a></li>
+			  <li><a href="\Analytics Page\index.html">Analytics</a></li>
+			  <li><a href="\Bill Remainder Page\index.html">Bill Reminder</a></li>
+			</ul>
+		  </nav>
+	</header>
+
+	<main>
+		<h1>Budgeting</h1>
+
+		<form id="budget-form">
+			<label for="total-income">Total Income:</label>
+			<input type="number" id="total-income" name="total-income" placeholder="Enter Total Income"><br>
+
+			<label for="food">Food:</label>
+			<input type="number" id="food" name="food" placeholder="Enter Budget"><br>
+
+			<label for="utility">Utility:</label>
+			<input type="number" id="utility" name="utility" placeholder="Enter Budget"><br>
+
+			<label for="transport">Transport:</label>
+			<input type="number" id="transport" name="transport" placeholder="Enter Budget"><br>
+
+			<label for="entertainment">Entertainment:</label>
+			<input type="number" id="entertainment" name="entertainment" placeholder="Enter Budget"><br>
+
+			<label for="others">Others:</label>
+			<input type="number" id="others" name="others" placeholder="Enter Budget"><br>
+
+			<button type="submit" id="budget-submit-btn">Save Budget</button>
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>Amount Spent</th>
+					<th>Budget Limit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Food</td>
+					<td id="food-amount">0</td>
+					<td id="food-limit">0</td>
+				</tr>
+				<tr>
+					<td>Utility</td>
+					<td id="utility-amount">0</td>
+					<td id="utility-limit">0</td>
+				</tr>
+				<tr>
+					<td>Transport</td>
+					<td id="transport-amount">0</td>
+					<td id="transport-limit">0</td>
+				</tr>
+				<tr>
+					<td>Entertainment</td>
+					<td id="entertainment-amount">0</td>
+					<td id="entertainment-limit">0</td>
+				</tr>
+				<tr>
+					<td>Others</td>
+					<td id="others-amount">0</td>
+					<td id="others-limit">0</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 BudgetBuddy. All Rights Reserved.</p>
+	</footer>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
